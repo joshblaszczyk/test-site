@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>About — Art's Auto Interiors</title>
+<meta name="description" content="Third generation tailor in Sandwich, Illinois. Hand-stitched custom interiors. By appointment only." />
+<link rel="stylesheet" href="styles.css?v=8" />
+</head>
+<body class="leather-bg" data-palette="restrained" data-page="about" data-screen-label="02 About">
+
+  <section class="page-header">
+    <span class="eyebrow">About</span>
+    <h1>The shop.</h1>
+    <span class="marker">Sandwich, Illinois</span>
+  </section>
+
+  <div class="divider stitch-double"></div>
+
+  <!-- Mission opener -->
+  <section class="mission">
+    <div class="mission-grid">
+      <div>
+        <span class="eyebrow">A family trade</span>
+        <h2 class="section-title">Three generations<br/>of <em>tailors.</em></h2>
+      </div>
+      <div>
+        <p class="lede">
+          My grandfather was a tailor. My father was a tailor. I'm a tailor.
+          The trade got handed down the way trades used to — standing at the bench
+          next to him, learning the feel of the leather and the bite of the needle.
+        </p>
+        <p class="lede" style="margin-top:18px;">
+          The materials changed; the principles didn't. Pattern it to the actual piece.
+          Cut once. Stitch where it counts. Build it the way it's supposed to be built.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider stitch-double"></div>
+
+  <!-- "I fix other people's mistakes" — quieter, intentional -->
+  <section class="mistakes">
+    <div class="mistakes-inner">
+      <span class="eyebrow">A quote that found me</span>
+      <p class="mistakes-headline">"I fix other people's <em>mistakes.</em>"</p>
+      <p class="mistakes-body">
+        A lot of what comes through the door is a re-do. A cushion that came
+        out of the chain shop already pulling at the seams. A convertible top
+        installed crooked. A headliner hanging in three months. Glue where
+        there should have been stitches; particle board where there should
+        have been marine ply.
+      </p>
+      <p class="mistakes-body">
+        It gets stripped, patterned again, and built right. By the time it leaves,
+        you wouldn't know there was a first time.
+      </p>
+    </div>
+  </section>
+
+  <div class="divider stitch-double"></div>
+
+  <!-- Philosophy -->
+  <section class="heritage">
+    <div class="heritage-grid">
+      <div>
+        <span class="eyebrow">How the shop runs</span>
+        <h2 class="section-title">A garage that<br/>works like a <em>tailor's shop.</em></h2>
+      </div>
+      <div class="heritage-list">
+        <div class="heritage-item">
+          <span class="num">01</span>
+          <div>
+            <h4>Measure first. Cut once.</h4>
+            <p>Every piece is patterned to the actual seat, hull, or frame in front of me. Nothing is "universal."</p>
+          </div>
+        </div>
+        <div class="heritage-item">
+          <span class="num">02</span>
+          <div>
+            <h4>Materials matter.</h4>
+            <p>Marine vinyl that earns the name. Foam graded for the application. Thread weight matched to the load.</p>
+          </div>
+        </div>
+        <div class="heritage-item">
+          <span class="num">03</span>
+          <div>
+            <h4>Stitch where it counts.</h4>
+            <p>Top-stitched where it sees stress. Double-stitched where it sees water. Hand-finished where it sees you.</p>
+          </div>
+        </div>
+        <div class="heritage-item">
+          <span class="num">04</span>
+          <div>
+            <h4>By appointment.</h4>
+            <p>So we can talk through what you want and look the vehicle over together.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider stitch-double"></div>
+
+  <!-- Closing -->
+  <section class="closing">
+    <p class="closing-line">If you've got something worth doing right, get in touch.</p>
+    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:28px;">
+      <a class="btn btn-primary" href="tel:+16308128671">Call (630) 812-8671</a>
+      <a class="btn" href="services.html">See the services</a>
+    </div>
+  </section>
+
+  <script src="site.js?v=5"></script>
+
+  <style>
+    .mission { max-width: 1180px; margin: 0 auto; padding: 80px 24px; }
+    .mission-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.4fr;
+      gap: 60px;
+      align-items: start;
+    }
+    @media (max-width: 1024px) {
+      .mission-grid { grid-template-columns: 1fr; gap: 28px; }
+    }
+
+    .mistakes {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 90px 24px;
+    }
+    .mistakes-inner {
+      max-width: 760px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .mistakes-headline {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-weight: 900;
+      font-size: clamp(40px, 6vw, 80px);
+      line-height: 1.1;
+      color: var(--bone);
+      letter-spacing: -0.02em;
+      margin: 18px 0 40px;
+    }
+    .mistakes-headline em {
+      color: var(--lime);
+      font-style: italic;
+    }
+    .mistakes-body {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: clamp(17px, 1.6vw, 19px);
+      line-height: 1.7;
+      color: var(--bone);
+      max-width: 60ch;
+      margin: 0 auto 18px;
+      text-wrap: pretty;
+    }
+
+    .heritage { max-width: 1180px; margin: 0 auto; padding: 80px 24px; }
+    .heritage-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.4fr;
+      gap: 60px;
+      align-items: start;
+    }
+    .heritage-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+    .heritage-item {
+      display: grid;
+      grid-template-columns: 70px 1fr;
+      gap: 20px;
+      padding: 24px 0;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+    .heritage-item:first-child { border-top: 0; padding-top: 0; }
+    .heritage-item .num {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-weight: 900;
+      font-size: 36px;
+      line-height: 1;
+      color: var(--lime);
+      opacity: 0.85;
+    }
+    .heritage-item h4 {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-weight: 700;
+      font-size: 22px;
+      color: var(--bone);
+      margin-bottom: 6px;
+    }
+    .heritage-item p {
+      font-family: 'Special Elite', monospace;
+      color: #b8b4a8;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+    @media (max-width: 1024px) {
+      .heritage-grid { grid-template-columns: 1fr; gap: 30px; }
+      .heritage-item { grid-template-columns: 50px 1fr; }
+      .heritage-item .num { font-size: 28px; }
+    }
+
+    .closing {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 80px 24px 60px;
+      text-align: center;
+    }
+    .closing-line {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: clamp(24px, 3.2vw, 36px);
+      color: var(--bone);
+      line-height: 1.3;
+      text-wrap: pretty;
+    }
+  </style>
+
+</body>
+</html>
