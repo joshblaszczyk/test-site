@@ -59,6 +59,26 @@
   --c-brand-tag: var(--ash);
 }
 
+/* Restrained: any element painted lime via utility classes flips to bone.
+   Stitching (dashed lines / seams) intentionally stays lime — it IS the thread. */
+[data-palette="restrained"] .lime,
+[data-palette="restrained"] .marker,
+[data-palette="restrained"] .scrawl {
+  color: var(--bone);
+  text-shadow: 2px 2px 0 #000;
+}
+[data-palette="restrained"] .scrawl::before { background-image: linear-gradient(90deg, var(--bone) 0 18px, transparent 18px 26px); filter: none; }
+[data-palette="restrained"] .nav a:hover::before,
+[data-palette="restrained"] .nav a.active::before {
+  border-color: var(--bone);
+  filter: none;
+}
+[data-palette="restrained"] .btn-primary:hover { color: var(--bone); }
+[data-palette="restrained"] .menu-toggle {
+  border-color: rgba(243, 238, 223, 0.4);
+  color: var(--bone);
+}
+
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 html { scroll-behavior: smooth; }
@@ -431,6 +451,15 @@ h1, h2, h3 { font-family: 'Playfair Display', Georgia, serif; font-style: italic
 @media (max-width: 1024px) {
   .nav, .header-actions .btn-call { display: none; }
   .menu-toggle { display: inline-block; }
+  /* Palette toggle stays visible on mobile next to the burger */
+  .palette-toggle {
+    order: -1; /* sit before the burger if Flex container reorders */
+  }
+  .palette-toggle button {
+    padding: 6px 8px;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+  }
   .nav.open {
     display: flex;
     position: absolute;
@@ -484,7 +513,6 @@ body:not([data-palette="restrained"]) .palette-toggle button.on {
   color: #000;
 }
 @media (max-width: 1024px) {
-  .palette-toggle { display: none; }
   .header-actions.open .palette-toggle {
     display: inline-flex;
     margin-top: 10px;
