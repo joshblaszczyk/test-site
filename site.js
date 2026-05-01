@@ -47,7 +47,7 @@
       </nav>
       <div class="header-actions">
         <div class="palette-toggle" role="group" aria-label="Site style">
-          <button type="button" data-pal="restrained" class="${saved === 'restrained' ? 'on' : ''}" aria-pressed="${saved === 'restrained'}">Hand-stitched</button>
+          <button type="button" data-pal="restrained" class="${saved === 'restrained' ? 'on' : ''}" aria-pressed="${saved === 'restrained'}">White</button>
           <button type="button" data-pal="original" class="${saved === 'original' ? 'on' : ''}" aria-pressed="${saved === 'original'}">Original</button>
         </div>
         <a href="${PHONE_HREF}" class="btn-call">Call ${PHONE}</a>
